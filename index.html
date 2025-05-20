@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aya Defne ÖZKUL – CV & Portfolio</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Aya Defne Özkul'un modern, dinamik ve dark/light tema CV sayfası.">
+  <meta name="keywords" content="Aya Özkul, CV, Bilgisayar Mühendisliği, Portfolio">
+  <link rel="canonical" href="https://seninsiten.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aya Defne ÖZKUL – CV & Portfolio">
+  <meta property="og:description" content="Bilgisayar mühendisliği öğrencisi Aya Defne Özkul'un modern, dinamik CV sayfası.">
+  <meta property="og:url" content="https://seninsiten.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://seninsiten.com/img/profile-dark.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aya Defne ÖZKUL",
+    "url": "https://seninsiten.com/",
+    "image": "https://seninsiten.com/img/profile-dark.jpg",
+    "jobTitle": "Bilgisayar Mühendisliği Öğrencisi",
+    "alumniOf": "Karabük University",
+    "sameAs": [
+      "https://www.linkedin.com/in/aya-defne-özkul-77a088353/"
+    ]
+  }
+  </script>
+
+  <!-- Inline CSS -->
+  <style>
+    :root {
+      --bg: #121212;
+      --fg: #e0e0e0;
+      --accent: #1db954;
+      --card-bg: #1e1e1e;
+    }
+    /* Light theme overrides */
+    :root[data-theme="light"] {
+      --bg: #ffffff;
+      --fg: #121212;
+      --card-bg: #f0f0f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: var(--bg); color: var(--fg); line-height: 1.6; }
+    .nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--card-bg); position: sticky; top: 0; z-index: 100; }
+    .nav-bar .logo { font-size: 1.2rem; font-weight: bold; }
+    .nav-bar .nav-links { list-style: none; display: flex; gap: 1rem; }
+    .nav-bar .nav-links a { color: var(--fg); text-decoration: none; transition: color .3s; }
+    .nav-bar .nav-links a:hover { color: var(--accent); }
+    .toggle-theme { cursor: pointer; }
+    header .intro { display: flex; align-items: center; gap: 1rem; padding: 2rem 1rem; }
+    .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 2px solid var(--accent); }
+    .intro-text h1 { font-size: 2rem; }
+    main { padding: 1rem; display: grid; gap: 1.5rem; }
+    .card { background: var(--card-bg); padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.5); }
+    .card h2 { margin-bottom: .5rem; border-bottom: 2px solid var(--accent); display: inline-block; }
+    .card ul { list-style: none; margin-top: .5rem; }
+    .card ul li { margin-bottom: .5rem; }
+    footer { text-align: center; padding: 1rem; font-size: .9rem; color: var(--fg); }
+  </style>
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="logo">Aya ÖZKUL</div>
+    <ul class="nav-links">
+      <li><a href="#about">Hakkımda</a></li>
+      <li><a href="#education">Eğitim</a></li>
+      <li><a href="#skills">Yetenekler</a></li>
+      <li><a href="#experience">Deneyimler</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+    <div class="toggle-theme" id="toggleTheme">🌙</div>
+  </nav>
+
+  <header id="about">
+    <div class="intro">
+      <img src="https://media.licdn.com/dms/image/.../profile-displayphoto-shrink_400_400.jpg" alt="Profil" class="profile-img">
+      <div class="intro-text">
+        <h1>Aya Defne ÖZKUL</h1>
+        <p>2210206052 | Bilgisayar Mühendisliği Öğrencisi</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="education" class="card">
+      <h2>Eğitim</h2>
+      <ul>
+        <li><strong>2018–2022</strong> Private Form Kampus College Science High School</li>
+        <li><strong>2022–...</strong> Karabük Üniversitesi, Bilgisayar Mühendisliği</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Yetenekler</h2>
+      <ul id="skillsList">
+        <li>✔ C Programming</li>
+        <li>✔ Flutter (Beginner)</li>
+        <li>✔ SQL (Intermediate)</li>
+        <li>✔ Bartender</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Deneyimler</h2>
+      <ul>
+        <li><strong>GDC On Campus:</strong> Core Team Member</li>
+        <li><strong>TEMA Youth Foundation:</strong> Management Team Member</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>İletişim</h2>
+      <ul>
+        <li>Tel: <a href="tel:+905327600648">+90 532 760 06 48</a></li>
+        <li>Email: <a href="mailto:ayadefne@gmail.com">ayadefne@gmail.com</a></li>
+        <li>Konum: Karabük, Türkiye</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/aya-defne-özkul-77a088353/">Profil</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Aya Defne ÖZKUL</p>
+  </footer>
+
+  <script>
+    // Toggle dark/light theme
+    const toggle = document.getElementById('toggleTheme');
+    const root = document.documentElement;
+    toggle.addEventListener('click', () => {
+      if (root.getAttribute('data-theme') === 'light') {
+        root.removeAttribute('data-theme');
+        toggle.textContent = '🌙';
+      } else {
+        root.setAttribute('data-theme', 'light');
+        toggle.textContent = '☀️';
+      }
+    });
+    // Smooth scroll
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
